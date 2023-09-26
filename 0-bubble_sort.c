@@ -12,6 +12,8 @@ void bubble_sort(int *array, size_t size)
 	int temp, swapped;
 	size_t i, j, k;
 
+	if (size < 2)
+		return;
 	for (i = 0; i < size - 1; i++)
 	{
 		/*Flag to optimize the algorithm by detecting if any swaps were made*/
